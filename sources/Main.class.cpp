@@ -4,7 +4,7 @@
 #include <iostream>
 #include <ctime>
 
-std::string const Main::_Data_place("../data/");
+std::string const Main::_Data_place("data/");
 
 std::vector<std::string>
 Main::pack_args(int argc, char *argv[])
@@ -18,7 +18,7 @@ Main::pack_args(int argc, char *argv[])
 
 Main::Main(int argc, char *argv[]) :
 	_args(pack_args(argc, argv)),
-	_map("lili.map")
+	_map(Main::_Data_place + "test.map")
 {
 }
 
